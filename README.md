@@ -51,5 +51,5 @@ If not, the last segment of the snake is removed using cobra.pop(), which makes 
 
 - Game Speed: relogio.tick(15) controls the frame rate, setting the game speed to 15 frames per second.
 
-✍️ AUTHOR
-This code was created with the help of a tiktok video by Leandro Hirt. I just followed along and made some changes.
+### ✍️ AUTHOR
+#### Importante Note: This code was created with the help of a tiktok video by Leandro Hirt. I just followed along and made some changes.
