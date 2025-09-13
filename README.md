@@ -1,4 +1,4 @@
-## JOGO DA COBRINHA (SNAKE GAME)
+## JOGO DA COBRINHA COLORIDA (RAINBOW SNAKE GAME)
 This is a simple implementation of the classic Snake game, written in Python using the Pygame library.
 
 ### 🎮 HOW TO PLAY
