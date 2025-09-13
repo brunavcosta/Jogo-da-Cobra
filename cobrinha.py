@@ -9,10 +9,22 @@ cobra = [(100,50)]
 direcao = (10,0)
 comdida = (300,200)
 
+rainbow_colors = [
+    (255, 0, 0),  # Red
+    (255, 127, 0), # Orange
+    (255, 255, 0), # Yellow
+    (0, 255, 0),  # Green
+    (0, 0, 255),  # Blue
+    (75, 0, 130), # Indigo
+    (148, 0, 211) # Violet
+]
+
+
 def desenhar():
   tela.fill((0,0,0))
-  for parte in cobra:
-    pygame.draw.rect(tela, (0,255,0), (*parte, 10, 10))
+  for i, parte in enumerate(cobra):
+    color = rainbow_colors[i % len(rainbow_colors)]
+    pygame.draw.rect(tela, color, (*parte, 10, 10))
 
   pygame.draw.rect(tela, (255,0,0), (*comdida, 10, 10))
   pygame.display.update()
@@ -45,7 +57,7 @@ while rodando:
 
   if nova_cabeca[0] < 0 or nova_cabeca[0] >= 600 or nova_cabeca[1] < 0 or nova_cabeca[1] >= 400:
     rodando = False
-  
+
   if nova_cabeca in cobra[1:]:
     rodando = False
 
